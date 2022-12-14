@@ -13,7 +13,9 @@ enum LaserHostCommand{
  * 
  */
 class LaserHost{
-    
+
+public:
+
     LaserHost();
     
     /**
@@ -24,10 +26,12 @@ class LaserHost{
      */
     void run();
 
+private:
+
     void handleCommand(LaserHostCommand cmd);
-    
+
     vSocket* listenerSocket;
     
 };
 
-#endif LASER_HOST_HPP
+#endif //LASER_HOST_HPP

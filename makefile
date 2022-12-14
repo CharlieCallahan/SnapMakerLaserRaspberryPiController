@@ -22,7 +22,7 @@ all : $(LINK_TARGET)
 	chmod +x $(LINK_TARGET)
 	echo All done
 
-$(LINK_TARGET) : $(OBJS) $(LINK_TARGET).o IntegralHash.o
+$(LINK_TARGET) : $(OBJS) $(LINK_TARGET).o
 	g++ -g -o $@ $^ $(CFLAGS)
 
 %.o : ${SRCDIR}/%.cpp
